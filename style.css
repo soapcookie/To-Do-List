@@ -2,8 +2,12 @@
   box-sizing: border-box;
 }
 
+h1 {
+  color: #f47c7c;
+}
+
 body {
-  background-color: white;
+  background-image: linear-gradient(to top, #ef9f9f, #fad4d4, #fff2f2);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,58 +16,72 @@ body {
 }
 
 .todo-container {
+  border: none;
   max-width: 100%;
   width: 400px;
 }
 
 #todo-input {
-  background-color: #fff29e;
   border: none;
   display: block;
+  background-color: #fad4d4;
   font-size: 2rem;
   padding: 0.5rem 2rem 0.5rem 0.5rem;
   width: 100%;
 }
 
+#todo-input:active {
+  border: 2px solid #f47c7c;
+}
+
 #todo-list {
-  background-color: #ffff8f;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  background-color: #fff2f2;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 #todo-list li {
-  border-top: 1px solid rgb(242, 242, 242);
   font-size: 1.5rem;
   user-select: none;
 }
 
 .complete {
-  color: rgb(155, 155, 155);
+  color: #f47c7c;
   text-decoration: line-through;
 }
 
 li button {
-  background-color: #ffffd2;
   width: 1.5rem;
   height: 1.5rem;
   margin: 0.5rem;
-  border: 2px solid black;
+  border: 2px solid #ef9f9f;
   border-radius: 8px;
   cursor: pointer;
 }
 
 li button:active {
-  border: 2px solid grey;
+  border: 2px solid #ef9f9f;
 }
 
-#delbtn {
-  background-color: #fff29e;
+.reset-btn-wrapper {
+  margin-top: 1rem;
+}
+
+.reset-btn-wrapper button {
+  color: #ef9f9f;
   font-weight: bold;
+  font-size: 1rem;
+  width: 120px;
+  height: 30px;
+  border: 3px solid #fad4d4;
+  background-color: #fff2f2;
+  font-display: 20px;
   padding: 0.2rem 1rem;
   cursor: pointer;
 }
 
-.delete-btn-wrapper {
-  margin-top: 1rem;
+.reset-btn-wrapper:active {
+  border: 2px solid #ef9f9f;
 }
